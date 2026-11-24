@@ -46,7 +46,14 @@
                     De senaste 8 åren har jag arbetat i djuraffär.
                     Annars är jag en mycket kreativ person som älskar att pyssla och skapa. Som hobby driver jag en egen
                     webshop där jag skapar barn och baby produkter.</p>
-                <img src="images/portrait.png" alt="kvinna med glasögon håller i en litet barn">
+                <picture>
+                    <source type="image/avif"
+                        srcset="images/portrait-800.avif 800w, images/portrait-1600.avif 1600w, images/portrait-2400.avif 2400w">
+                    <img src="images/portraitJPG-800.jpg"
+                        srcset="images/portraitJPG-800.jpg 800w, images/portraitJPG-1600.jpg 1600w, images/portraitJPG-2400.jpg 2400w"
+                        sizes="(min-width: 800px) 800px, 100vw" loading="lazy" width="800" height="1067"
+                        alt="porträtt på en kvinna som håller i ett litet barn">
+                </picture>
             </div>
         </section>
     </main>
