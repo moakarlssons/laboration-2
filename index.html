@@ -30,7 +30,15 @@
     </header>
 
     <main>
-        <img class="hero" src="images/header.png" alt="flicka som går i vattnet bland vassen">
+        <picture class="hero">
+            <source type="image/avif"
+                srcset="images/header-800.avif 800w, images/header-1600.avif 1600w, images/header-2400.avif 2400w">
+            <img src="images/header-800.jpg"
+                srcset="images/header-800.jpg 800w, images/header-1600.jpg 1600w, images/header-2400.jpg 2400w"
+                sizes="(min-width: 800px) 800px, 100vw" loading="lazy" width="800" height="1067"
+                alt="flicka som går i vattnet bland vassen">
+        </picture>
+
         <section class="info">
             <h1>Labroration 2</h1>
             <p>I denna laboration var uppgiften att på en enklare webbplats visa upp 3 olika bilder som bildbehandlats.
@@ -60,7 +68,14 @@
                         sizes="(min-width: 800px) 800px, 100vw" loading="lazy" width="800" height="1067"
                         alt="Dimma omger höga klippväggar och tät grönska medan vatten rinner över klipporna.">
                 </picture>
-                <img src="images/bildserie003.jpg" alt="vit blomma med lila vanter med en fluga mitt i">
+                <picture>
+                    <source type="image/avif"
+                        srcset="images/bildserie003-800.avif 800w, images/bildserie003-1600.avif 1600w, images/bildserie003-2400.avif 2400w">
+                    <img src="images/bildserie003-800.jpg"
+                        srcset="images/bildserie003-800.jpg 800w, images/bildserie003-1600.jpg 1600w, images/bildserie003-2400.jpg 2400w"
+                        sizes="(min-width: 800px) 800px, 100vw" loading="lazy" width="800" height="1067"
+                        alt="vit blomma med lila vanter med en fluga mitt i">
+                </picture>
             </div>
             <a href="gallery.html" class="btn">Ta mig till alla bilder</a>
         </section>
