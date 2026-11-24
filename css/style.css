@@ -29,7 +29,7 @@ img {
 /*Header*/
 
 header {
-    background-color: #DDE6ED;
+    background-color: #AEC4D4;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,8 +40,13 @@ header li {
     text-decoration: none;
 }
 
+
 .logo img {
     width: 100px;
+}
+
+h1 {
+    color: #790D16;
 }
 
 /*Startsida*/
@@ -54,9 +59,14 @@ header li {
     padding: 10px;
 }
 
+.info h1 {
+    padding-bottom: 10px;
+}
+
 .gallery-section {
     text-align: center;
     padding-top: 10px;
+    color: #790D16;
 }
 
 .start-gallery {
@@ -66,7 +76,7 @@ header li {
 }
 
 .btn {
-    background-color: #DDE6ED;
+    background-color: #AEC4D4;
     color: black;
     display: inline-block;
     margin-top: 15px;
