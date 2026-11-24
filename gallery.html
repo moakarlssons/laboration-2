@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+</head>
+
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="logotyp för one shot studio">
+            </a>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="gallery.html">Galleri</a></li>
+                <li><a href="aboutme.html">Om mig</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Galleri</h1>
+        <section class="image-comparison">
+            <article>
+                <!-- <img src="images/katt.jpg" alt="svart och vit katt som sitter på ett bord, ena ögat är lila"> -->
+                <picture>
+                    <source type="image/avif"
+                        srcset="images/katt-600.avif 600w, images/katt-1200.avif 1200w, images/katt-1800.avif 1800w">
+                    <img src="images/katt-600.jpg"
+                        srcset="images/katt-600.jpg 600w, images/katt-1200.jpg 1200w, images/katt-1800.jpg 1800w"
+                        sizes="(min-width: 600px) 600px, 100vw" loading="lazy" width="600"
+                        alt="svart och vit katt som sitter på ett bord, ena ögat är lila">
+                </picture>
+                <p><strong>Orginalbild</strong></p>
+            </article>
+            <article>
+                <img src="images/bildserie001.jpg" alt="svart och vit katt som sitter på ett bord">
+                <p><strong>Redigerad bild</strong></p>
+                <p>Bildens brightness/contrast, curves, color balance och hue/saturation har justerats för att försöka
+                    få til en
+                    liknande känsla i alla bilder. På denna bild använde jag mig också extra av hue/saturation för att
+                    kunna
+                    ändra färg på det lila ögat. </p>
+            </article>
+        </section>
+        <section class="image-comparison">
+            <article>
+                <img src="images/vatten.jpg"
+                    alt="Dimma omger höga klippväggar och tät grönska medan någon står i yoga pose där vattnet rinner ned över klipporna.">
+                <p><strong>Orginalbild</strong></p>
+            </article>
+            <article>
+                <img src="images/bildserie002.jpg"
+                    alt="Dimma omger höga klippväggar och tät grönska medan vatten rinner över klipporna.">
+                <p><strong>Redigerad bild</strong></p>
+                <p>Bildens brightness/contrast, curves, color balance och hue/saturation har justerats för att försöka
+                    få till
+                    en liknande känsla i alla bilder. På denna bild tog jag hjälp av vertygen patch tool och clone tool
+                    för att
+                    ta bort hen som står och yogar på bilden. </p>
+            </article>
+        </section>
+        <section class="image-comparison">
+            <article>
+                <img src="images/blomma.jpg" alt="vit blomma med lila vanter med en fluga mitt i">
+                <p><strong>Orginalbild</strong></p>
+            </article>
+            <article>
+                <img src="images/bildserie003.jpg" alt="vit blomma med lila vanter med en fluga mitt i">
+                <p><strong>Redigerad bild</strong></p>
+                <p>På denna bild har jag justerat brightness/contrast, curves, color balance och hue/saturation för att
+                    försöka
+                    nå en liknande känsla som de alla bilderna. </p>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
