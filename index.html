@@ -44,7 +44,14 @@
         <section class="gallery-section">
             <h2>Galleri</h2>
             <div class="start-gallery">
-                <img src="images/bildserie001.jpg" alt="svart och vit katt som sitter på ett bord">
+                <picture>
+                    <source type="image/avif"
+                        srcset="images/bildserie001-800.avif 800w, images/bildserie001-1600.avif 1600w, images/bildserie001-2400.avif 2400w">
+                    <img src="images/bildserie001-800.jpg"
+                        srcset="images/bildserie001-800.jpg 800w, images/bildserie001-1600.jpg 1600w, images/bildserie001-2400.jpg 2400w"
+                        sizes="(min-width: 800px) 800px, 100vw" loading="lazy" width="800" height="1067"
+                        alt="svart och vit katt som sitter på ett bord">
+                </picture>
                 <img src="images/bildserie002.jpg"
                     alt="Dimma omger höga klippväggar och tät grönska medan vatten rinner över klipporna.">
                 <img src="images/bildserie003.jpg" alt="vit blomma med lila vanter med en fluga mitt i">
