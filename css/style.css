@@ -76,6 +76,10 @@ header {
     text-decoration: none;
 }
 
+.header-nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
 .header-nav a:hover,
 .header-nav a:focus-visible {
     text-decoration: underline;
@@ -175,7 +179,6 @@ header {
 }
 
 /* STÖRRE SKÄRMAR */
-
 @media (min-width: 768px) {
 
     p {
@@ -214,7 +217,10 @@ header {
     }
 
     .image-comparison article {
-        flex: 1 1 200px;
+        flex: 1 0 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* Om mig */
